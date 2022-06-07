@@ -20,11 +20,11 @@ metadata:
   labels:
     app: train-schedule
 spec:
-  replicas: 2
+  replicas: $CANARY_REPLICAS
   selector:
     matchLabels:
       app: train-schedule
-      track: stable
+      track: carary
   template:
     metadata:
       labels:
